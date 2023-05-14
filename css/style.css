@@ -1,156 +1,165 @@
-html{
-    box-sizing: border-box;
+html {
+  box-sizing: border-box;
 }
 
-*,*::after, *::before{
-    box-sizing: inherit;
-    /* я подкл нормалайз файл в видео он написал
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+  /* я подкл нормалайз файл в видео он написал
     марджин 0 поддинг 0 */
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 html,
-body{
-    height: 100%;
+body {
+  height: 100%;
 }
 
-ul{
-    list-style-type: none;
+ul {
+  list-style-type: none;
 }
 
-a{
-    text-decoration: none;
-    color: inherit;
+a {
+  text-decoration: none;
+  color: inherit;
 }
 
-.wrapper{
-    min-height: 100%;
-    display: flex;
-    flex-direction: column;
+.section-title {
+  margin-bottom: 50px;
+  font-weight: 700;
+  font-size: 48px;
+  text-align: center;
 }
 
-.container{
-    max-width: 1220px;
-    margin: 0 auto;
-    padding: 0 10px;
+.wrapper {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
-body{
-    font-family: 'Inter', sans-serif;
-    font-weight: 400;
-    font-size: 16px;
-    /* указываем общую высоту шрифта line-height: 130%, 
+.container {
+  max-width: 1220px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  /* указываем общую высоту шрифта line-height: 130%, 
     но в видеоо он почемуто пишет line-height: 1.3;*/
-    line-height: 1.3;
+  line-height: 1.3;
 }
 
-.header{
-    background-color: #151515;
+.header {
+  background-color: #151515;
 }
 
-.header-main{
-    background-color: transparent;
-    position: absolute;
-    z-index: 5;
-    left: 0;
-    right: 0;
+.header-main {
+  background-color: transparent;
+  position: absolute;
+  z-index: 5;
+  left: 0;
+  right: 0;
 }
 
-.header__inner{
-    padding-top: 40px;
-    padding-bottom: 45px;
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
+.header__inner {
+  padding-top: 40px;
+  padding-bottom: 45px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
 }
 
-.menu__list{
-    display: flex;
-    gap: 35px;
+.menu__list {
+  display: flex;
+  gap: 35px;
 }
 
-.menu__list-link{
-    color: #FFFFFF;
-    text-transform: uppercase;
-    font-weight: 700;
+.menu__list-link {
+  color: #ffffff;
+  text-transform: uppercase;
+  font-weight: 700;
 }
 
-.footer{
-    background-color: #151515;
-    padding: 50px 0 32px;
-    color: #FFFFFF;
+.footer {
+  background-color: #151515;
+  padding: 50px 0 32px;
+  color: #ffffff;
 }
 
-.footer__menu{
-    display: flex;
-    justify-content: space-around;
-    margin-bottom: 50px;
+.footer__menu {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 50px;
 }
 
-.footer__menu-list{
-    max-width: 250px;
+.footer__menu-list {
+  max-width: 250px;
 }
 
-.footer__menu-title{
-    font-weight: 700;
-    font-size: 24px;
-    padding-bottom: 20px;
+.footer__menu-title {
+  font-weight: 700;
+  font-size: 24px;
+  padding-bottom: 20px;
 }
 
-.footer__menu-item + .footer__menu-item{
-    padding-top: 20px;
+.footer__menu-item + .footer__menu-item {
+  padding-top: 20px;
 }
 
-.app{
-    display: flex;
-    justify-content: center;
-    gap: 40px;
-    margin-bottom: 52px;
+.app {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-bottom: 52px;
 }
 
-.footer__copy{
-    max-width: 800px;
-    margin: 0 auto 30px;
-    text-align: center;
+.footer__copy {
+  max-width: 800px;
+  margin: 0 auto 30px;
+  text-align: center;
 }
 
-.copy__nav-list{
-    display: flex;
-    justify-content: center;
-    gap: 40px;
+.copy__nav-list {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
 }
 
-.main{
-    flex-grow: 1;
+.main {
+  flex-grow: 1;
 }
 
-.top{
-    color: #FFFFFF;
-    text-align: center;
-    padding-top: 250px;
-    padding-bottom: 50px;
-    position: absolute;
-    z-index: 5;
-    left: 0;
-    right: 0;
+.top {
+  color: #ffffff;
+  text-align: center;
+  padding-top: 250px;
+  padding-bottom: 50px;
+  position: absolute;
+  z-index: 5;
+  left: 0;
+  right: 0;
 }
 
-.title{
-    padding-bottom: 40px;
-    font-weight: 700;
-    font-size: 96px;
+.title {
+  padding-bottom: 40px;
+  font-weight: 700;
+  font-size: 96px;
 }
 
-.top__link{
-    background-color: #151515;
-    padding: 23px;
-    max-width: 430px;
-    width: 100%;
-    display: inline-block;
-    text-transform: uppercase;
-    font-weight: 700;
-    font-size: 36px;
+.top__link {
+  background-color: #151515;
+  padding: 23px;
+  max-width: 430px;
+  width: 100%;
+  display: inline-block;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 36px;
 }
 
 /* накладываем фон т.к. картинка была затемненной а мы скачали светлую */
@@ -158,39 +167,115 @@ body{
     background: rgba(21,21,21,.3);
 } */
 /* переделываем затемнение */
-.swiper::after{
-    content: '';
-    background: rgba(21,21,21,.3);
-    position: absolute;
-    z-index: 5;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    top: 0;
+.swiper::after {
+  content: "";
+  background: rgba(21, 21, 21, 0.3);
+  position: absolute;
+  z-index: 5;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
 }
 
-
-.swiper-slide{
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    height: 100vh;
+.swiper-slide {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
 }
 
-.swiper-pagination-bullet{
-    width: 120px;
-    height: 3px;
-    background-color: #151515;
-    border-radius: 0;
-    opacity: 1;
-    margin: 0 15px !important;
+.swiper-pagination-bullet {
+  width: 120px;
+  height: 3px;
+  background-color: #151515;
+  border-radius: 0;
+  opacity: 1;
+  margin: 0 15px !important;
 }
 
-.swiper-pagination-bullets.swiper-pagination-horizontal{
-    bottom: 50px;
+.swiper-pagination-bullets.swiper-pagination-horizontal {
+  bottom: 50px;
 }
 
-.swiper-pagination-bullet-active{
-    height: 6px;
-    background-color: #FFFFFF;
+.swiper-pagination-bullet-active {
+  height: 6px;
+  background-color: #ffffff;
+}
+
+.why-lease {
+  padding: 150px 0;
+}
+
+.why-lease__list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px;
+  text-align: center;
+}
+
+.why-lease__item-img {
+  margin-bottom: 30px;
+}
+
+.why-lease__item-title {
+  margin-bottom: 30px;
+  font-weight: 700;
+  font-size: 24px;
+}
+
+.why-lease__item-text {
+  text-align: left;
+}
+
+.how-does {
+  padding-bottom: 150px;
+}
+
+.how-does__inner {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.how__does-title {
+  font-weight: 700;
+  font-size: 24px;
+  padding-top: 50px;
+}
+
+.how__does-list {
+  padding: 50px 0 70px;
+  counter-reset: myCounter;
+}
+
+.how__does-item {
+  list-style: none;
+  width: 270px;
+  position: relative;
+  margin-left: auto;
+  box-sizing: content-box;
+  padding: 19px 0 19px 240px;
+  min-height: 63px;
+}
+
+.how__does-item + .how__does-item{
+    margin-top: 40px;
+}
+
+.how__does-item::before {
+  counter-increment: myCounter;
+  content: counter(myCounter);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #0066FF;
+  font-weight: 700;
+  font-size: 48px;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  color: #ffffff;
+  position: absolute;
+  left: 0;
+  top: 0;
 }
