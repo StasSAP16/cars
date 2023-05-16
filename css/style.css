@@ -61,7 +61,7 @@ body {
 .header-main {
   background-color: transparent;
   position: absolute;
-  z-index: 5;
+  z-index: 10;
   left: 0;
   right: 0;
 }
@@ -83,6 +83,10 @@ body {
   color: #ffffff;
   text-transform: uppercase;
   font-weight: 700;
+}
+
+.menu__list-link--active {
+    color: #0066FF;
 }
 
 .footer {
@@ -258,8 +262,8 @@ body {
   min-height: 63px;
 }
 
-.how__does-item + .how__does-item{
-    margin-top: 40px;
+.how__does-item + .how__does-item {
+  margin-top: 40px;
 }
 
 .how__does-item::before {
@@ -268,7 +272,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #0066FF;
+  background-color: #0066ff;
   font-weight: 700;
   font-size: 48px;
   width: 100px;
@@ -280,44 +284,167 @@ body {
   top: 0;
 }
 
-.video{
-    padding-bottom: 150px;
+.video {
+  padding-bottom: 150px;
 }
 
-.video__title{
-    margin-bottom: 20px;
+.video__title {
+  margin-bottom: 20px;
 }
 
-.video__text{
-    font-weight: 700;
-    font-size: 24px;
-    margin-bottom: 50px;
-    text-align: center;
+.video__text {
+  font-weight: 700;
+  font-size: 24px;
+  margin-bottom: 50px;
+  text-align: center;
 }
 
-.video__content{
-    margin: 0 auto;
-    display: block;
+.video__content {
+  margin: 0 auto;
+  display: block;
 }
 
-.important{
-    padding-bottom: 150px;
+.important {
+  padding-bottom: 150px;
 }
 
-.important__title{
-    margin-bottom: 20px;
+.important__title {
+  margin-bottom: 20px;
 }
 
-.important__text{
-    max-width: 580px;
-    margin: 0 auto 50px;
+.important__text {
+  max-width: 580px;
+  margin: 0 auto 50px;
 }
 
-.important__list{
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
+.important__list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
 }
 
-.important__item-img{
-    margin-bottom: 20px;
+.important__item-img {
+  margin-bottom: 20px;
+}
+
+.contacts {
+  padding: 100px 0 150px;
+}
+
+.contacts__title {
+  margin-bottom: 20px;
+}
+
+.contacts__text {
+  text-align: center;
+  font-weight: 700;
+  font-size: 24px;
+  margin-bottom: 50px;
+}
+
+form {
+  max-width: 580px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.form__input {
+  width: 270px;
+  padding: 18px 20px;
+  display: inline-block;
+  border: 1px solid #0066ff;
+  margin-bottom: 50px;
+  /* скопировали с бади */
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.3;
+  /* доплнительно указали черный цвет */
+  color: #000;
+}
+
+.form__input::placeholder,
+.form__textarea::placeholder {
+  /* скопировали с бади */
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.3;
+  /* доплнительно указали черный цвет */
+  color: #000;
+  /* добавляем опасити как в фигме */
+  opacity: 0.5;
+}
+
+.form__textarea {
+  width: 100%;
+  resize: none;
+  padding: 28px 20px;
+  height: 290px;
+  border: 1px solid #0066ff;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.3;
+  color: #000;
+  margin-bottom: 50px;
+}
+
+.form__btn {
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: #151515;
+  /* дублируем ерифты ( та же особенность что и у инпутов */
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  padding: 13px 61px;
+  margin: 0 auto;
+}
+
+.blog {
+  padding-bottom: 150px;
+}
+
+.blog__items {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  /* расстояние между картинками */
+  gap: 40px;
+  margin-bottom: 70px;
+}
+
+.blog__item {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.blog__item-img {
+  margin-bottom: 30px;
+  width: 100%;
+}
+
+.blog__item-title {
+  flex-basis: 446px;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.blog__item-link {
+  color: #ffffff;
+  background-color: #0066ff;
+  padding: 4px 20px;
+}
+
+.blog__link {
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: #151515;
+  padding: 13px;
+  width: 225px;
+  margin: 0 auto;
+  text-align: center;
+  display: block;
 }
