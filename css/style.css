@@ -693,16 +693,19 @@ form {
   .app{
   margin-bottom: 30px;
   }
-  .footer__menu {
+  /* .footer__menu {
     grid-template-columns: repeat(1, 1fr);
     text-align: center;
     margin-bottom: 30px;
-  }
+  } */
   .footer__menu-title {
     padding-bottom: 5px;
   }
   .footer__menu-item + .footer__menu-item {
     padding-top: 10px;
+  }
+  .footer__menu {
+    margin-bottom: 40px;
   }
 
 }
